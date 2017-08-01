@@ -1,0 +1,217 @@
+<!--
+Beginning of Weather App
+
+Also requires files:
+	weather.css
+	weather.js
+-->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width"> 
+	<title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Prompt:100,200,300,400,500" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="reset.css"> 
+	 <link rel="stylesheet" type="text/css" href="weather.css">
+</head>
+
+<body onresize="resize()">
+    
+    <main>
+        <header>
+            <div class="left_date">
+                <div class="time"></div>
+                <div id="date"></div>
+            </div>
+
+            <div class="right_btn">
+                    <input type="text" id="search" placeholder="enter zip">
+                    <button onclick="gotNewPlace()" class="submit">submit
+                    </button>
+                    <button onclick="gotNewPlace()" class="mobile_btn">
+                        <img src="../WeatherApp/plus.png" alt="mobile_button">
+                    </button>
+            </div>
+
+            <div class="mobile">
+                <div class="mobiletime"></div>
+               <div class="mobile_location"></div>
+            </div>
+        </header>
+<div id="weatherBox">
+    <p id="forecast"></p>
+        <section class="section1">
+            <div>
+                <img src="../WeatherApp/part-sun.png" class="sec1_weatherImg">
+            </div>
+            <div class="middle_location">
+                <div class="location"></div>
+                <div class="temperature"></div>
+                <div class="description"></div>
+            </div>
+            <div class="right_section1">
+                <div class="drop">
+                    <img src="../WeatherApp/drop.png" alt="drop">
+                    <div id=humidity></div>
+                </div>
+                <div class="wind">
+                    <img src="../WeatherApp/wind.png" alt="windspeed">
+                    <div id=windspeed></div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="resize">
+        <section id="range">
+            <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>
+            
+             <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="stepper">
+                <div class="weather-el">
+                    <div class="date"></div>
+                    <img src="../WeatherApp/part-sun.png" class="weatherImg">
+                    <p class="el-desc"></p>
+                    <div class="temp">
+                        <div class="left_tmp"></div>
+                        <div class="right_tmp"></div>
+                    </div>
+                 </div>
+            </div>      
+    </section>
+    </div>
+    
+    <div class="sliding">
+        <div class="sliding-left">
+             <button onclick="leftBtn()">
+                  <img src="../WeatherApp/arrow-left.png">
+            </button>
+            <p>previous forecasts</p>
+        </div>
+        
+        <div class="sliding-right">
+            <p>more forecasts</p>
+            <button onclick="rightBtn()">
+                  <img src="../WeatherApp/arrow-right.png">
+            </button>
+        </div>
+    </div>
+
+</div>
+</main>    
+<footer>
+    <a href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/white.png" width="134" height="29"/> </a>
+</footer>
+<!-- contains callback function that is called when weather gets here from server --> 
+<script src="weather.js"></script>
+
+<!-- asks server to send weather -->
+<script src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='davis, ca')&format=json&callback=callbackFunction"></script>
+
+</body>
+</html>
