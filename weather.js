@@ -107,25 +107,25 @@ function callbackFunction(data) {
     for (var i = 0; i < sec1_weatherImg.length; i++) {
         var code = sec1_code;
         if (code === '19' || code === '20' || code === '21' || code === '22' || code === '28' || code === '26' || code === '27') {
-            sec1_weatherImg[i].src = "../WeatherApp/cloudy.png";
+            sec1_weatherImg[i].src = "image/cloudy.png";
         } 
         else if (code==='6' || code === '8' || code === '9' || code === '10' || code === '11' || code === '12' || code === '35' || code === '40' || code === '45') { 
-            sec1_weatherImg[i].src = "../WeatherApp/rain.png";       
+            sec1_weatherImg[i].src = "image/rain.png";       
         } 
         else if (code === '7' || code === '13' || code === '14' || code === '15' || code === '16' || code === '17' || code === '18' || code === '41' || code === '42' || code === '43' || code === '46') {
-            sec1_weatherImg[i].src = "../WeatherApp/snow.png";       
+            sec1_weatherImg[i].src = "image/snow.png";       
         } 
         else if (code === '23' || code === '24' || code === '25') {
-            sec1_weatherImg[i].src = "../WeatherApp/wind.png"
+            sec1_weatherImg[i].src = "image/wind.png"
         }
         else if (code === '29' || code === '30' || code === '44') {
-            sec1_weatherImg[i].src = "../WeatherApp/part-sun.png";
+            sec1_weatherImg[i].src = "image/part-sun.png";
         } 
         else if (code === '31' || code === '32' || code === '33'|| code === '34' || code === '36') {
-            sec1_weatherImg[i].src = "../WeatherApp/sunny.png";
+            sec1_weatherImg[i].src = "image/sunny.png";
         } 
         else if (code === '3' || code === '4' || code === '37' || code === '38' || code === '39' || code === '47') {
-            sec1_weatherImg[i].src = "../WeatherApp/thunder.png";        
+            sec1_weatherImg[i].src = "image/thunder.png";        
         } 
         else if ( code === '0' || code === '1' || code === '2' || code === '5') {
             sec1_weatherImg[i].src = "";
@@ -160,25 +160,25 @@ function callbackFunction(data) {
         var code = forecast[i].code;
         
         if (code === '19' || code === '20' || code === '21' || code === '22' || code === '28' || code === '26' || code === '27') {
-            weatherImg[i].src = "../WeatherApp/cloudy.png";
+            weatherImg[i].src = "image/cloudy.png";
         } 
         else if (code==='6' || code === '8' || code === '9' || code === '10' || code === '11' || code === '12' || code === '35' || code === '40' || code === '45') { 
-            weatherImg[i].src = "../WeatherApp/rain.png";       
+            weatherImg[i].src = "image/rain.png";       
         } 
         else if (code === '7' || code === '13' || code === '14' || code === '15' || code === '16' || code === '17' || code === '18' || code === '41' || code === '42' || code === '43' || code === '46') {
-            weatherImg[i].src = "../WeatherApp/snow.png";       
+            weatherImg[i].src = "image/snow.png";       
         } 
         else if (code === '23' || code === '24' || code === '25') {
-            weatherImg[i].src = "../WeatherApp/wind.png"
+            weatherImg[i].src = "image/wind.png"
         }
         else if (code === '29' || code === '30' || code === '44') {
-            weatherImg[i].src = "../WeatherApp/part-sun.png";
+            weatherImg[i].src = "image/part-sun.png";
         } 
         else if (code === '31' || code === '32' || code === '33'|| code === '34' || code === '36') {
-            weatherImg[i].src = "../WeatherApp/sunny.png";
+            weatherImg[i].src = "image/sunny.png";
         } 
         else if (code === '3' || code === '4' || code === '37' || code === '38' || code === '39' || code === '47') {
-            weatherImg[i].src = "../WeatherApp/thunder.png";        
+            weatherImg[i].src = "image/thunder.png";        
         } 
         else if ( code === '0' || code === '1' || code === '2' || code === '5') {
             weatherImg[i].src = "";
